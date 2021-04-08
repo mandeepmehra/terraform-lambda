@@ -1,7 +1,7 @@
 resource "aws_lambda_function" "myfunc" {
   filename         = "lambda.py.zip"
   function_name    = "mylambdafunction"
-  handler          = "lambdaHandler"
+  handler          = "lambda.lambdaHandler"
   source_code_hash = filebase64sha256("lambda.py.zip")
   role             = aws_iam_role.lambdarole.arn
   runtime          = "python3.8"
