@@ -1,2 +1,2 @@
 def lambdaHandler(event, context):
-    print('Hello World')
+    print('Hello World v1.0')
