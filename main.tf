@@ -27,12 +27,12 @@ EOF
 }
 
 
-resource "aws_s3" "s3bucket" {
-  bucket = "s3lambdatriggerexample"
+resource "aws_s3_bucket" "s3bucket" {
+  bucket = "s3lambdatriggerexamplemandeep"
 }
 
 resource "aws_cloudwatch_log_group" "cwlogs" {
-  name              = "/aws/lambda/${var.lambda_function_name}"
+  name              = "/aws/lambda/mylambdafunction"
   retention_in_days = 14
 }
 
