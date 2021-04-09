@@ -7,6 +7,8 @@ resource "aws_lambda_function" "myfunc" {
   runtime          = "python3.8"
 }
 
+
+
 resource "aws_iam_role" "lambdarole" {
   name               = "basiclambdarole-mandeep"
   assume_role_policy = <<EOF
