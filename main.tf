@@ -34,10 +34,10 @@ resource "aws_s3_bucket" "s3bucket" {
   bucket = "s3lambdatriggerexamplemandeep"
 }
 
-resource "aws_cloudwatch_log_group" "cwlogs" {
-  name              = "/aws/lambda/mylambdafunction"
-  retention_in_days = 14
-}
+#resource "aws_cloudwatch_log_group" "cwlogs" {
+#  name              = "/aws/lambda/mylambdafunction"
+#  retention_in_days = 14
+#}
 
 resource "aws_iam_policy" "lambda_logging" {
   name        = "lambda_logging_mandeep"
